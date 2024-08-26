@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Header{
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+.Header h2{
+    background-color: white;
+    font-size: 1.2rem;
+    color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.box {
+    background-color: #ffffff;
+    font-size: x-small;
+    border: 2px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: lightblue; */
+}
+
+.cardTop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.greenText{
+    color: green;
+}
+.cardStrikeText{
+    display: flex;
+    height: 100%;
+    align-items: end;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.options {
+    margin-top: 20px;
+    transition: max-height 0.3s ease;
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.visible {
+    max-height: 150px;
+    opacity: 1;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.TotalTextDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+
+}
+.Footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+input[type="radio"].selected {
+    accent-color: green;
+}
+
+
+
+
+
